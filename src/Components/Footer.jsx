@@ -1,8 +1,7 @@
 import React from "react";
 import "../index.css";
-import { VscRemote } from "react-icons/vsc";
-import { VscSourceControl } from "react-icons/vsc";
-import { VscSync } from "react-icons/vsc";
+//import { VscSourceControl } from "react-icons/vsc";
+//import { VscSync } from "react-icons/vsc";
 
 function Footer ()
 {
