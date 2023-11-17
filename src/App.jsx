@@ -17,9 +17,9 @@ function App() {
     <div className="min-h-screen">
         <Sidebar  />
         <Navbar />
-        <Home />
         <Routes>
-          <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Project />} />
           <Route path="/Contact" element={<Contact />} />
