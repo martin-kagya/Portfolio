@@ -38,7 +38,7 @@ function Navbar ()
             {
                 navLinks.map((link) => 
                     (
-                     <Link to={link.path} key={link.id} className=" p-9 text-white hover:bg-stone-900 border border-stone-900"><span className="text-yellow-400 text-xs font-semibold focus:bg-stone-900 active:bg-stone-900 sticky top-0" >JS</span> {link.name}</Link> 
+                     <Link to={link.path} key={link.id} className=" p-9 text-white hover:bg-stone-900 hover:border hover:border-t-2 hover:border-sky-500 border border-stone-900"><span className="text-yellow-400 text-xs font-semibold focus:bg-stone-900 active:bg-stone-900 sticky top-0" >JS</span> {link.name}</Link> 
                     )
                 )
             }

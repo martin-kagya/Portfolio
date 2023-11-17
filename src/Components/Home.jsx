@@ -11,7 +11,7 @@ function Home ()
             <section className="bg-stone-900 text-justify max-w-2xl">
             <h3 className="font-semibold text-2xl">My name is,</h3>
                 <p>
-                    <span className="uppercase font-bold text-3xl">Martin Kagya Agyemang</span><br></br>
+                    <span className="uppercase font-bold text-xl md:text-3xl">Martin Kagya Agyemang</span><br></br>
                     <span><Typewriter text="A FRONT END ENGINEER" speed={90} /></span><br></br>
                     <button className="border rounded-lg p-2">CHECK MY RESUME</button>
                 </p>
