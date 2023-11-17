@@ -18,8 +18,8 @@ function App() {
         <Sidebar  />
         <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Project />} />
           <Route path="/Contact" element={<Contact />} />
