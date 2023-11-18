@@ -4,6 +4,7 @@ import Typewriter from "./Typewriter";
 
 function Home ()
 {
+    const resume = 'https://drive.google.com/file/d/1UPFuR4jzuryYKwCenmP5mo7N32PH1XAK/view?usp=drivesdk'
    
     return(
         <>
@@ -13,7 +14,7 @@ function Home ()
                 <p>
                     <span className="uppercase font-bold text-xl md:text-3xl">Martin Kagya Agyemang</span><br></br>
                     <span><Typewriter text="A FRONT END ENGINEER" speed={90} /></span><br></br>
-                    <button className="border rounded-lg p-2">CHECK MY RESUME</button>
+                    <a href={resume}><button className="border rounded-lg p-2">CHECK MY RESUME</button></a>
                 </p>
             </section>
         </div>

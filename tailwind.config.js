@@ -10,9 +10,11 @@ export default {
       },
     screens: {
       'tablet': '768px',
-      'phone': '480px',
-      'smallphone': '320px',
-    }
+      'phone-pro': '420px',
+      'phone': '385px',
+      'smallphone': {'max': '375px'},
+    },
+    
     },
   },
   plugins: [],

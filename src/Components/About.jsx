@@ -45,7 +45,8 @@ function About ()
     return(
         <>
         <div className="height flex items-center justify-center">
-            <section className="bg-stone-900 max-w-sm md:max-w-md lg:max-2xl: text-slate-300 flex flex-col gap-2 text-justify">
+            <section className="bg-stone-900 max-w-sm md:max-w-md lg:max-2xl: text-slate-300 flex flex-col gap-2 text-justify
+            smallphone:max-w-screen-phone">
                 <h3 className="font-semibold text-lg pl-5">ABOUT ME<hr></hr></h3>
                 <p className='text-sm p-5'>
                     My name is Martin Kagya Agyemang, a level 300 student of computer engineering at 

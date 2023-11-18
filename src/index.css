@@ -14,3 +14,9 @@ html,body
 {
     min-height: calc(100vh - 4rem);
 }
+.width-calc
+{
+    margin-bottom: 2rem;
+    position: fixed;
+    bottom: 0;;
+}
