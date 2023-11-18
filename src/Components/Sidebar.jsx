@@ -1,4 +1,5 @@
 import React from "react";
+import {useState} from 'react'
 import "../index.css";
 
 import { MdOutlineContentCopy } from "react-icons/md";
@@ -8,7 +9,9 @@ import { MdOutlineForwardToInbox } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { VscSettingsGear } from "react-icons/vsc";
+import { CiMenuBurger } from "react-icons/ci";
 import {BiChevronDown} from "react-icons/bi";
+import { BiChevronRight } from "react-icons/bi";
 
 function Sidebar() {
     const icons = [
@@ -29,30 +32,49 @@ function Sidebar() {
             id: "Message",
         },
     ]
+    const [isSectionHidden, setIsSectionHidden] = useState(false);
+
+    const handleDoubleClick = () => {
+        console.log("doubleClicked")
+        if (window.innerWidth < 500) {
+            setIsSectionHidden(true);
+        }
+    };
+    const show = () =>
+    {
+        setIsSectionHidden(false)
+    }
+   
     return(
         <>
-            <section className="w-16 md:w-80 phone:block smallphone:hidden lg:block bg-neutral-800 h-screen float-left text-gray-400 overscroll-y-none relative">
-                <div className="flex flex-col items-center lg:inline-block lg:relative">
-                    {
-                        icons.map((icon) => (
-                            <div key={icon.id} className="lg: p-6 hover:bg-stone-900 hover:text-sky-500">
-                                {icon.name}
-                            </div>
-                        ))
-                    }
-                    <div className="md:hidden lg:hidden width-calc">
-                        <div className="flex flex-col gap-6">
+        {isSectionHidden ? (
+            <div className='absolute top-16' onClick={show}>
+               <CiMenuBurger size={25} className="text-gray-400"/>
+            </div>
+            ) : null}
+        {!isSectionHidden && (
+            <section  className="w-16 md:w-80 icon xl:w-96 2xl:text-2xl phone:flex smallphone:hidden 2xl:flex 2xl:basis-4/12 grow lg:flex bg-neutral-800 h-screen float-left text-gray-400 overscroll-y-none relative">
+                <div className= "grid grid-cols-5">
+                    <div className="flex flex-col p-6 items-center tablet:bg-neutral-700  lg:pl-4 lg:bg-neutral-700">
+                        {
+                            icons.map((icon)=>(
+                                <span className="p-5 lg:p-9 tablet:p-9" onDoubleClick={handleDoubleClick} key={icon.id}>{icon.name}</span>
+                            ))
+                        }
+                        <div className="flex flex-col width-calc gap-9 justify-end">
                             <VscAccount size={25}/>
                             <VscSettingsGear size={25}/>
                         </div>
                     </div>
+                    <div className="hidden tablet:flex tablet:flex-col col-span-3 p-10">
+                        <p className="text-xs pl-8 pb-2">EXPLORER</p>
+                        <Link to='/' className="pl-2 font-semibold flex"><BiChevronDown size={25}/>Project</Link>
+                        <Link to='/' className="pl-5 font-thin flex"><BiChevronRight size={25}/>Quiz</Link>
+                    </div>
                 </div>
-                <span className="hidden lg:inline-block lg:text-sm  lg:pl-3">EXPLORER</span>
-                    <>
-                        <Link to="./Projects.jsx" className="hidden lg:flex flex-row gap-2"><BiChevronDown />Projects</Link>
-                        <Link to='/' className="hidden lg:flex lg:flex-row gap-2 pl-4"><BiChevronDown />Quiz App</Link>
-                    </>
             </section>
+        )}
+        
         </>
     )
 }

@@ -17,6 +17,6 @@ html,body
 .width-calc
 {
     margin-bottom: 2rem;
-    position: fixed;
+    position: absolute;
     bottom: 0;;
 }

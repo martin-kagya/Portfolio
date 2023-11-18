@@ -33,7 +33,7 @@ function Navbar ()
     ];
     return(
         <>
-        <div className="w-full whitespace-nowrap">
+        <div className="w-full whitespace-nowrap 2xl:text-xl">
             <nav className='bg-neutral-700 overflow-y-hidden pb-2 pt-2 overflow-x-auto border-neutral-700'>
             {
                 navLinks.map((link) => 
