@@ -20,7 +20,7 @@ function Contact ()
         {
             name: "github",
             Link: "https://github.com/martin-kagya",
-            website: "martin@githib.io",
+            website: "martin@github.io",
             id:"github"
         },
         {
@@ -40,7 +40,7 @@ function Contact ()
                         contacts.map((contact, index)=>
                         (
                             <p className='' key={contact.id}><span className='p-5 text-zinc-500'>{index + 3}</span><span className='pl-5 text-sky-500'>{contact.name}<span className='text-slate-300'>:</span> 
-                            <a href={contact.Link}><span className='text-orange-300 smallphone:text-xs'>{contact.website}</span></a>
+                            <a href={contact.Link}><span className='text-orange-300 smallphone:text-xs phone:text-xs'>{contact.website}</span></a>
                             <span className='text-slate-300'>;</span>
                             </span></p>
                         ))

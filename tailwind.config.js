@@ -11,10 +11,12 @@ export default {
     screens: {
       'tablet': '768px',
       'phone-pro': '420px',
-      'phone': '385px',
+      'phone': {'max':'395px'},
       'smallphone': {'max': '375px'},
     },
-    
+    fontSize: {
+      "2xs": ".7rem",
+    }
     },
   },
   plugins: [],

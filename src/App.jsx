@@ -14,10 +14,11 @@ function App() {
 
   return (
     <>
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-hidden">
         <Sidebar  />
         <Navbar />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Projects" element={<Project />} />

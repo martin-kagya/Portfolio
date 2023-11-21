@@ -9,7 +9,7 @@ import { MdOutlineForwardToInbox } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import { VscSettingsGear } from "react-icons/vsc";
-import { CiMenuBurger } from "react-icons/ci";
+import { TfiLayoutMenuSeparated } from "react-icons/tfi";
 import {BiChevronDown} from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 
@@ -48,8 +48,8 @@ function Sidebar() {
     return(
         <>
         {isSectionHidden ? (
-            <div className='absolute top-16' onClick={show}>
-               <CiMenuBurger size={25} className="text-gray-400"/>
+            <div className='absolute top-10 p-2' onClick={show}>
+               <TfiLayoutMenuSeparated size={25} className="text-gray-400"/>
             </div>
             ) : null}
         {!isSectionHidden && (
