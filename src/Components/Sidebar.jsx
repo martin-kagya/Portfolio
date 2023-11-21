@@ -53,17 +53,17 @@ function Sidebar() {
             </div>
             ) : null}
         {!isSectionHidden && (
-            <section  className="w-16 md:w-80 icon xl:w-96 2xl:text-2xl phone:flex smallphone:hidden 2xl:flex 2xl:basis-4/12 grow lg:flex bg-neutral-800 h-screen float-left text-gray-400 overscroll-y-none relative">
+            <section  className="w-16 md:w-80 icon xl:w-96 tablet:text-xl 2xl:text-2xl phone:flex smallphone:hidden 2xl:flex 2xl:basis-4/12 grow lg:flex bg-neutral-800 h-screen float-left text-gray-400 overscroll-y-none relative">
                 <div className= "grid grid-cols-5">
-                    <div className="flex flex-col p-6 items-center tablet:bg-neutral-700  lg:pl-4 lg:bg-neutral-700">
+                    <div className="flex flex-col p-6 items-center tablet:bg-neutral-700  lg:pl-4 lg:bg-neutral-700 ">
                         {
                             icons.map((icon)=>(
-                                <span className="p-5 lg:p-9 tablet:p-9" onDoubleClick={handleDoubleClick} key={icon.id}>{icon.name}</span>
+                                <span className="p-5 lg:p-9 tablet:p-9 hover:text-slate-200 active:text-slate-200" onDoubleClick={handleDoubleClick} key={icon.id}>{icon.name}</span>
                             ))
                         }
                         <div className="flex flex-col width-calc gap-9 justify-end">
-                            <VscAccount size={25}/>
-                            <VscSettingsGear size={25}/>
+                            <VscAccount size={25} className="hover:text-slate-200 active:text-slate-200"/>
+                            <VscSettingsGear size={25} className="hover:text-slate-200 active:text-slate-200"/>
                         </div>
                     </div>
                     <div className="hidden tablet:flex tablet:flex-col col-span-3 p-10">

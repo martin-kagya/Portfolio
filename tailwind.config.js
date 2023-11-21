@@ -9,7 +9,7 @@ export default {
         'Roboto': ['"Roboto mono"', 'monospace']
       },
     screens: {
-      'tablet': '768px',
+      'tablet': '790px',
       'phone-pro': '420px',
       'phone': {'max':'395px'},
       'smallphone': {'max': '375px'},

@@ -8,7 +8,7 @@ function Home ()
    
     return(
         <>
-        <div className="height flex items-center justify-center text-slate-300">
+        <div className="height flex items-center justify-center text-slate-300 tablet:text-xl">
             <section className="bg-stone-900 text-justify max-w-2xl">
             <h3 className="font-semibold text-2xl">My name is,</h3>
                 <p>

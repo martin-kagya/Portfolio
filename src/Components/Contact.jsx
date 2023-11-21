@@ -32,7 +32,7 @@ function Contact ()
     ]
     return(
         <>
-            <div className='height sm:text-sm flex flex-col whitespace-nowrap lg:text-lg md:text-md'>
+            <div className='height sm:text-sm flex flex-col whitespace-nowrap lg:text-lg md:text-md tablet:text-xl'>
                 <h3 className='text-slate-300 pl-5 pt-12'>Reach out to me Via:</h3>
                 <span className='text-slate-300 pt-12 '><span className='p-5 text-zinc-500'>1</span>.Social:</span>
                 <div><span className='p-5 text-zinc-500'>2</span><span><span className='text-slate-300'>{`{`}</span></span>

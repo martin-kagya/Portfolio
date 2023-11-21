@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen overflow-y-auto scroll-smooth">
         <Sidebar  />
         <Navbar />
         <Routes>

@@ -6,7 +6,7 @@ function Project ()
 {
     return(
         <>
-        <div className="height flex items-center justify-center text-slate-50 smallphone:overflow-hidden">
+        <div className="height flex items-center justify-center text-slate-50 overflow-hidden">
             <Timeline/>
         </div>
         </>
