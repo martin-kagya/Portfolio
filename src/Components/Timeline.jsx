@@ -35,7 +35,7 @@ const Timeline = () => {
     </VerticalTimelineElement>
     <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        date="12/2023 - 2008"
+        date="12/2023 - 12/2023"
         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
         style={{color:"gray"}}
         icon={<MdOutlineWork />}

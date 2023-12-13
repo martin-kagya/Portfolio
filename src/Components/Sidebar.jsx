@@ -18,18 +18,22 @@ function Sidebar() {
         {
             name: <MdOutlineContentCopy size={25}/>,
             id: "content",
+            path: "/",
         },
         {
             name: <VscEdit size={25}/>,
             id: "Pencil",
+            path: "https://generaltrivia.netlify.app/",
         },
         {
             name: <VscCode size={25}/>,
             id: "Code",
+            path: "/",
         },
         {
             name: <MdOutlineForwardToInbox size={25}/>,
             id: "Message",
+            path: "/",
         },
     ]
     const [isSectionHidden, setIsSectionHidden] = useState(false);
@@ -58,7 +62,7 @@ function Sidebar() {
                     <div className="flex flex-col p-6 items-center tablet:bg-neutral-700  lg:pl-4 lg:bg-neutral-700 ">
                         {
                             icons.map((icon)=>(
-                                <span className="p-5 lg:p-9 tablet:p-9 hover:text-slate-200 active:text-slate-200" onDoubleClick={handleDoubleClick} key={icon.id}>{icon.name}</span>
+                                <a href={icon.path} className="p-5 lg:p-9 tablet:p-9 hover:text-slate-200 active:text-slate-200" onDoubleClick={handleDoubleClick} key={icon.id}>{icon.name}</a>
                             ))
                         }
                         <div className="flex flex-col width-calc gap-9 justify-end">
@@ -69,7 +73,7 @@ function Sidebar() {
                     <div className="hidden tablet:flex tablet:flex-col col-span-3 p-10">
                         <p className="text-xs pl-8 pb-2">EXPLORER</p>
                         <Link to='/' className="pl-2 font-semibold flex"><BiChevronDown size={25}/>Project</Link>
-                        <Link to='/' className="pl-5 font-thin flex"><BiChevronRight size={25}/>Quiz</Link>
+                        <a href='https://generaltrivia.netlify.app/' className="pl-5 font-thin flex"><BiChevronRight size={25}/>Quiz</a>
                     </div>
                 </div>
             </section>

@@ -34,7 +34,7 @@ function About ()
             level: "50%"
         },
         {
-            name: "BOOTSTRAP",
+            name: "PYTHON",
             level: "60%"
         },
         {
