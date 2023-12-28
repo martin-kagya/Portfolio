@@ -23,7 +23,7 @@ function Sidebar() {
         {
             name: <VscEdit size={25}/>,
             id: "Pencil",
-            path: "https://generaltrivia.netlify.app/",
+            path: "/Made",
         },
         {
             name: <VscCode size={25}/>,
@@ -33,7 +33,7 @@ function Sidebar() {
         {
             name: <MdOutlineForwardToInbox size={25}/>,
             id: "Message",
-            path: "/",
+            path: "mailto:martinkagya777@gmail.com",
         },
     ]
     const [isSectionHidden, setIsSectionHidden] = useState(false);
@@ -73,7 +73,7 @@ function Sidebar() {
                     <div className="hidden tablet:flex tablet:flex-col col-span-3 p-10">
                         <p className="text-xs pl-8 pb-2">EXPLORER</p>
                         <Link to='/' className="pl-2 font-semibold flex"><BiChevronDown size={25}/>Project</Link>
-                        <a href='https://generaltrivia.netlify.app/' className="pl-5 font-thin flex"><BiChevronRight size={25}/>Quiz</a>
+                        <Link to='/Made' className="pl-5 font-thin flex"><BiChevronRight size={25}/>Quiz</Link>
                     </div>
                 </div>
             </section>
